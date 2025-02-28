@@ -1,0 +1,48 @@
+body {
+    background: linear-gradient( #687b69, #4b584b);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+    
+}
+
+section{
+    flex-direction: row;
+}
+
+h1 {
+    text-align: center;
+    font-size: 7vh;
+    color: white;
+    font-family: "DM Serif Display", serif;
+    letter-spacing: 0.28vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+img {
+    height: 45vh;
+    width: auto;
+    margin: 2vh; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+img:hover {
+    transform: scale(1.1); 
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 20%;
+        height: auto;
+       justify-content: center;
+    }
+}
